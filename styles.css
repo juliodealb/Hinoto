@@ -1,0 +1,344 @@
+/* ============================================
+   BAÑOS HINOTO - INODOROS INTELIGENTES JAPONESES
+   Premium CSS with Japanese Aesthetic
+   ============================================ */
+
+:root {
+    --hinoto-black: #0a0a0a;
+    --hinoto-white: #fafafa;
+    --hinoto-gray: #f5f5f5;
+    --hinoto-dark: #1a1a1a;
+    --hinoto-accent: #c9a96e;
+    --hinoto-silver: #c0c0c0;
+}
+
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--hinoto-white);
+    color: var(--hinoto-black);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Japanese Font Class */
+.font-jp {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse-slow {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Spinner animation */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+/* ============================================
+   UTILITY ANIMATION CLASSES
+   ============================================ */
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* ============================================
+   NAVBAR STYLES
+   ============================================ */
+
+#navbar {
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#navbar.scrolled {
+    background-color: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+   SCROLL REVEAL ANIMATIONS
+   ============================================ */
+
+.problem-section,
+.solution-section,
+.benefit-header,
+.benefit-card,
+.how-header,
+.how-step,
+.gallery-header,
+.testimonial-header,
+.testimonial-card,
+.urgency-section,
+.form-header,
+.form-container {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.problem-section.revealed,
+.solution-section.revealed,
+.benefit-header.revealed,
+.benefit-card.revealed,
+.how-header.revealed,
+.how-step.revealed,
+.gallery-header.revealed,
+.testimonial-header.revealed,
+.testimonial-card.revealed,
+.urgency-section.revealed,
+.form-header.revealed,
+.form-container.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger delays for cards */
+.benefit-card:nth-child(1) { transition-delay: 0ms; }
+.benefit-card:nth-child(2) { transition-delay: 100ms; }
+.benefit-card:nth-child(3) { transition-delay: 200ms; }
+.benefit-card:nth-child(4) { transition-delay: 300ms; }
+.benefit-card:nth-child(5) { transition-delay: 400ms; }
+.benefit-card:nth-child(6) { transition-delay: 500ms; }
+
+.how-step:nth-child(1) { transition-delay: 0ms; }
+.how-step:nth-child(2) { transition-delay: 100ms; }
+.how-step:nth-child(3) { transition-delay: 200ms; }
+.how-step:nth-child(4) { transition-delay: 300ms; }
+
+.testimonial-card:nth-child(1) { transition-delay: 0ms; }
+.testimonial-card:nth-child(2) { transition-delay: 150ms; }
+.testimonial-card:nth-child(3) { transition-delay: 300ms; }
+
+/* ============================================
+   FORM STYLES
+   ============================================ */
+
+input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.15);
+    outline: none;
+}
+
+/* Custom select arrow */
+select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.5rem;
+}
+
+/* ============================================
+   TESTIMONIAL CARDS
+   ============================================ */
+
+.testimonial-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+}
+
+/* ============================================
+   WHATSAPP BUTTON
+   ============================================ */
+
+#whatsapp-btn {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#whatsapp-btn:hover {
+    transform: scale(1.1);
+}
+
+/* ============================================
+   MOBILE MENU
+   ============================================ */
+
+#mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#mobile-menu.active {
+    max-height: 400px;
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR
+   ============================================ */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--hinoto-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--hinoto-accent);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--hinoto-black);
+}
+
+/* ============================================
+   SELECTION COLOR
+   ============================================ */
+
+::selection {
+    background-color: var(--hinoto-accent);
+    color: white;
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+
+@media (max-width: 768px) {
+    .font-jp {
+        font-size: 0.85em;
+    }
+    
+    #hero h1 {
+        font-size: 2.5rem !important;
+        line-height: 1.1 !important;
+    }
+    
+    .benefit-card,
+    .testimonial-card {
+        padding: 1.5rem !important;
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+    #whatsapp-btn,
+    #navbar,
+    .no-print {
+        display: none !important;
+    }
+    
+    section {
+        page-break-inside: avoid;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .problem-section,
+    .solution-section,
+    .benefit-header,
+    .benefit-card,
+    .how-header,
+    .how-step,
+    .gallery-header,
+    .testimonial-header,
+    .testimonial-card,
+    .urgency-section,
+    .form-header,
+    .form-container {
+        opacity: 1;
+        transform: none;
+    }
+}

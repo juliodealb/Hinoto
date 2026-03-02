@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inodoros Inteligentes Japoneses Premium | Baños Hinoto</title>
+    
+    <!-- SEO Local Optimizado -->
+    <meta name="description" content="Inodoros inteligentes japoneses premium. Tecnología de confort, higiene y diseño para tu hogar. Solicita cotización sin compromiso.">
+    <meta name="keywords" content="inodoros inteligentes, baños japoneses, inodoros de lujo, inodoros inteligentes japoneses, bidet inteligente, tecnología para baño">
+    <meta name="author" content="Baños Hinoto">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Baños Hinoto | Inodoros Inteligentes Japoneses Premium">
+    <meta property="og:description" content="Tecnología japonesa que transforma tu experiencia diaria. Confort, higiene y diseño de lujo.">
+    <meta property="og:image" content="https://static.photos/technology/1200x630/42">
+    <meta property="og:url" content="https://banoshinoto.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts - Inter + Noto Sans JP para estética japonesa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Google Analytics (Placeholder) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <!-- Facebook Pixel (Placeholder) -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'FB_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        jp: ['Noto Sans JP', 'sans-serif'],
+                    },
+                    colors: {
+                        'hinoto-black': '#0a0a0a',
+                        'hinoto-white': '#fafafa',
+                        'hinoto-gray': '#f5f5f5',
+                        'hinoto-dark': '#1a1a1a',
+                        'hinoto-accent': '#c9a96e',
+                        'hinoto-silver': '#c0c0c0',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans text-hinoto-black antialiased bg-hinoto-white">
+    
+    <!-- Facebook Pixel Noscript -->
+    <noscript>
+        <img height="1" width="1" style="display:none" 
+        src="https://www.facebook.com/tr?id=FB_PIXEL_ID&ev=PageView&noscript=1"/>
+    </noscript>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 bg-transparent py-5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <span class="font-jp text-2xl font-light text-white tracking-[0.3em]" id="logo-text">日の出</span>
+                    <span class="font-sans text-xl font-semibold text-white tracking-wider">HINOTO</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="#beneficios" class="text-white/90 hover:text-white transition-colors text-sm font-medium tracking-wide">BENEFICIOS</a>
+                    <a href="#como-funciona" class="text-white/90 hover:text-white transition-colors text-sm font-medium tracking-wide">CÓMO FUNCIONA</a>
+                    <a href="#modelos" class="text-white/90 hover:text-white transition-colors text-sm font-medium tracking-wide">MODELOS</a>
+                    <a href="#contacto" class="bg-white text-hinoto-black px-7 py-2.5 rounded-full hover:bg-hinoto-accent hover:text-white transition-all duration-300 text-sm font-semibold tracking-wide">
+                        COTIZAR AHORA
+                    </a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-hinoto-black/95 backdrop-blur-lg absolute w-full top-full left-0">
+            <div class="px-6 py-8 space-y-6">
+                <a href="#beneficios" class="block text-white py-2 hover:text-hinoto-accent">Beneficios</a>
+                <a href="#como-funciona" class="block text-white py-2 hover:text-hinoto-accent">Cómo Funciona</a>
+                <a href="#modelos" class="block text-white py-2 hover:text-hinoto-accent">Modelos</a>
+                <a href="#contacto" class="block bg-white text-hinoto-black text-center py-4 rounded-full font-semibold mt-4">COTIZAR AHORA</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-hinoto-black">
+        <!-- Background with Japanese aesthetic -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://static.photos/technology/1200x630/150" alt="Inodoro inteligente japonés premium" class="w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 bg-gradient-to-r from-hinoto-black via-hinoto-black/80 to-transparent"></div>
+        </div>
+        
+        <!-- Japanese pattern overlay -->
+        <div class="absolute inset-0 opacity-5 z-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+        
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+            <div class="max-w-3xl hero-content">
+                <div class="flex items-center space-x-4 mb-6">
+                    <span class="w-12 h-[1px] bg-hinoto-accent"></span>
+                    <span class="text-hinoto-accent font-jp text-sm tracking-[0.4em] uppercase">日本の技術</span>
+                </div>
+                
+                <h1 class="font-sans text-5xl md:text-7xl lg:text-8xl font-light text-white mb-8 leading-[0.95] tracking-tight">
+                    El futuro del<br>
+                    <span class="font-medium">baño</span> empieza<br>
+                    <span class="text-hinoto-accent font-jp text-4xl md:text-6xl lg:text-7xl">ここから</span>
+                </h1>
+                
+                <p class="text-gray-300 text-lg md:text-xl mb-12 max-w-xl font-light leading-relaxed">
+                    Inodoros inteligentes japoneses que elevan el confort, la higiene y el diseño de tu hogar.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-5">
+                    <a href="#contacto" class="group bg-white text-hinoto-black px-10 py-5 rounded-full font-semibold text-lg hover:bg-hinoto-accent hover:text-white transition-all duration-300 shadow-2xl flex items-center justify-center">
+                        Solicita tu cotización
+                        <i data-lucide="arrow-right" class="w-5 h-5 ml-3 transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#modelos" class="border border-white/30 text-white px-10 py-5 rounded-full font-medium text-lg hover:bg-white/10 transition-all duration-300 flex items-center justify-center backdrop-blur-sm">
+                        Ver modelos
+                    </a>
+                </div>
+                
+                <!-- Trust badges -->
+                <div class="flex flex-wrap items-center gap-8 mt-16 pt-8 border-t border-white/10">
+                    <div class="flex items-center text-white/60 text-sm">
+                        <i data-lucide="shield-check" class="w-5 h-5 mr-2 text-hinoto-accent"></i>
+                        Garantía 5 años
+                    </div>
+                    <div class="flex items-center text-white/60 text-sm">
+                        <i data-lucide="truck" class="w-5 h-5 mr-2 text-hinoto-accent"></i>
+                        Instalación incluida
+                    </div>
+                    <div class="flex items-center text-white/60 text-sm">
+                        <i data-lucide="award" class="w-5 h-5 mr-2 text-hinoto-accent"></i>
+                        Tecnología Japonesa
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+            <div class="w-[1px] h-16 bg-gradient-to-b from-transparent via-white/50 to-white/80"></div>
+        </div>
+    </section>
+
+    <!-- Problema → Solución -->
+    <section id="problema" class="py-32 bg-hinoto-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <!-- Problema -->
+                <div class="problem-section">
+                    <span class="text-hinoto-accent font-medium text-sm tracking-[0.3em] uppercase mb-4 block">El problema</span>
+                    <h2 class="font-sans text-4xl md:text-5xl font-light text-hinoto-black mb-10 leading-tight">
+                        Tu baño está<br><span class="font-medium">atrapado en el pasado</span>
+                    </h2>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start group">
+                            <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mr-6 flex-shrink-0 group-hover:bg-red-100 transition-colors">
+                                <i data-lucide="x" class="w-6 h-6 text-red-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-hinoto-black mb-2 text-lg">Higiene deficiente</h3>
+                                <p class="text-gray-500 leading-relaxed">Papel higiénico que irrita, limpieza incompleta y contacto constante con bacterias.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start group">
+                            <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mr-6 flex-shrink-0 group-hover:bg-red-100 transition-colors">
+                                <i data-lucide="x" class="w-6 h-6 text-red-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-hinoto-black mb-2 text-lg">Confort obsoleto</h3>
+                                <p class="text-gray-500 leading-relaxed">Asientos fríos, descargas ruidosas y una experiencia que no evoluciona.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start group">
+                            <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mr-6 flex-shrink-0 group-hover:bg-red-100 transition-colors">
+                                <i data-lucide="x" class="w-6 h-6 text-red-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-hinoto-black mb-2 text-lg">Diseño sin alma</h3>
+                                <p class="text-gray-500 leading-relaxed">Sanitarios que desentonan con la estética moderna de tu hogar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Solución -->
+                <div class="solution-section relative">
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-hinoto-accent/5 rounded-full blur-3xl"></div>
+                    
+                    <div class="bg-hinoto-black p-10 md:p-14 rounded-3xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-hinoto-accent/10 rounded-full -mr-32 -mt-32 blur-2xl"></div>
+                        
+                        <div class="relative z-10">
+                            <div class="flex items-center space-x-3 mb-8">
+                                <span class="font-jp text-hinoto-accent text-2xl">解決策</span>
+                                <span class="text-hinoto-accent font-medium text-sm tracking-[0.3em] uppercase">La solución</span>
+                            </div>
+                            
+                            <h3 class="font-sans text-3xl font-light text-white mb-6 leading-tight">
+                                Tecnología japonesa<br><span class="font-medium text-hinoto-accent">diseñada para transformar</span>
+                            </h3>
+                            
+                            <p class="text-gray-400 mb-10 leading-relaxed">
+                                Más de 40 años de innovación en Japón, ahora en tu hogar. La higiene, el confort y el diseño que mereces.
+                            </p>
+                            
+                            <ul class="space-y-5">
+                                <li class="flex items-center text-white">
+                                    <div class="w-10 h-10 bg-hinoto-accent/20 rounded-xl flex items-center justify-center mr-4">
+                                        <i data-lucide="sparkles" class="w-5 h-5 text-hinoto-accent"></i>
+                                    </div>
+                                    <span>Limpieza completa sin contacto</span>
+                                </li>
+                                <li class="flex items-center text-white">
+                                    <div class="w-10 h-10 bg-hinoto-accent/20 rounded-xl flex items-center justify-center mr-4">
+                                        <i data-lucide="thermometer" class="w-5 h-5 text-hinoto-accent"></i>
+                                    </div>
+                                    <span>Confort térmico personalizado</span>
+                                </li>
+                                <li class="flex items-center text-white">
+                                    <div class="w-10 h-10 bg-hinoto-accent/20 rounded-xl flex items-center justify-center mr-4">
+                                        <i data-lucide="zap" class="w-5 h-5 text-hinoto-accent"></i>
+                                    </div>
+                                    <span>Tecnología silenciosa y eficiente</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios" class="py-32 bg-hinoto-gray">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20 benefit-header">
+                <span class="text-hinoto-accent font-jp text-lg mb-4 block">利点</span>
+                <span class="text-hinoto-accent font-medium text-sm tracking-[0.3em] uppercase mb-4 block">Por qué elegirnos</span>
+                <h2 class="font-sans text-4xl md:text-6xl font-light text-hinoto-black mb-6">
+                    Beneficios que <span class="font-medium">sientes</span> cada día
+                </h2>
+                <p class="text-gray-500 max-w-2xl mx-auto text-lg">
+                    No es solo tecnología. Es una experiencia de bienestar que transforma tu rutina.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Beneficio 1 -->
+                <div class="benefit-card bg-white p-10 rounded-3xl hover:shadow-2xl transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-hinoto-black rounded-2xl flex items-center justify-center mb-8 group-hover:bg-hinoto-accent transition-colors">
+                        <i data-lucide="shield" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="font-sans text-2xl font-medium text-hinoto-black mb-4">Higiene Superior</h3>
+                    <p class="text-gray-500 leading-relaxed mb-6">
+                        Limpieza con agua purificada que elimina el 99.9% de bacterias. Sin contacto, sin irritación, sin residuos.
+                    </p>
+                    <div class="flex items-center text-hinoto-accent text-sm font-medium">
+                        <span>Zero contacto</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </div>
+                </div>
+                
+                <!-- Beneficio 2 -->
+                <div class="benefit-card bg-white p-10 rounded-3xl hover:shadow-2xl transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-hinoto-black rounded-2xl flex items-center justify-center mb-8 group-hover:bg-hinoto-accent transition-colors">
+                        <i data-lucide="sun" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="font-sans text-2xl font-medium text-hinoto-black mb-4">Confort Térmico</h3>
+                    <p class="text-gray-500 leading-relaxed mb-6">
+                        Asiento calefaccionado, agua a temperatura perfecta y secado con aire templado. Bienestar en cada detalle.
+                    </p>
+                    <div class="flex items-center text-hinoto-accent text-sm font-medium">
+                        <span>Temperatura personalizada</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </div>
+                </div>
+                
+                <!-- Beneficio 3 -->
+                <div class="benefit-card bg-white p-10 rounded-3xl hover:shadow-2xl transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-hinoto-black rounded-2xl flex items-center justify-center mb-8 group-hover:bg-hinoto-accent transition-colors">
+                        <i data-lucide="gem" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="font-sans text-2xl font-medium text-hinoto-black mb-4">Diseño Minimalista</h3>
+                    <p class="text-gray-500 leading-relaxed mb-6">
+                        Líneas puras, acabados cerámicos premium y una estética que eleva cualquier espacio de baño.
+                    </p>
+                    <div class="flex items-center text-hinoto-accent text-sm font-medium">
+                        <span>Estética japonesa</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </div>
+                </div>
+                
+                <!-- Beneficio 4 -->
+                <div class="benefit-card bg-white p-10 rounded-3xl hover:shadow-2xl transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-hinoto-black rounded-2xl flex items-center justify-center mb-8 group-hover:bg-hinoto-accent transition-colors">
+                        <i data-lucide="cpu" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="font-sans text-2xl font-medium text-hinoto-black mb-4">Tecnología Confiable</h3>
+                    <p class="text-gray-500 leading-relaxed mb-6">
+                        40+ años de innovación japonesa. Componentes de precisión con garantía extendida de 5 años.
+                    </p>
+                    <div class="flex items-center text-hinoto-accent text-sm font-medium">
+                        <span>Ingeniería de precisión</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </div>
+                </div>
+                
+                <!-- Beneficio 5 -->
+                <div class="benefit-card bg-white p-10 rounded-3xl hover:shadow-2xl transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-hinoto-black rounded-2xl flex items-center justify-center mb-8 group-hover:bg-hinoto-accent transition-colors">
+                        <i data-lucide="droplets" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="font-sans text-2xl font-medium text-hinoto-black mb-4">Ahorro de Agua</h3>
+                    <p class="text-gray-500 leading-relaxed mb-6">
+                        Sistema de descarga eficiente que reduce el consumo hasta un 30% sin sacrificar rendimiento.
+                    </p>
+                    <div class="flex items-center text-hinoto-accent text-sm font-medium">
+                        <span>Eco-friendly</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </div>
+                </div>
+                
+                <!-- Beneficio 6 -->
+                <div class="benefit-card bg-white p-10 rounded-3xl hover:shadow-2xl transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-hinoto-black rounded-2xl flex items-center justify-center mb-8 group-hover:bg-hinoto-accent transition-colors">
+                        <i data-lucide="trending-up" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="font-sans text-2xl font-medium text-hinoto-black mb-4">Valor de Propiedad</h3>
+                    <p class="text-gray-500 leading-relaxed mb-6">
+                        Un inodoro inteligente es un diferenciador de lujo que aumenta el valor percibido de tu inmueble.
+                    </p>
+                    <div class="flex items-center text-hinoto-accent text-sm font-medium">
+                        <span>Inversión inteligente</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA -->
+            <div class="mt-20 text-center">
+                <a href="#contacto" class="inline-flex items-center bg-hinoto-black text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-hinoto-accent transition-all duration-300 group">
+                    Descubre todos los beneficios
+                    <i data-lucide="arrow-right" class="w-5 h-5 ml-3 transform group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Funciona -->
+    <section id="como-funciona" class="py-32 bg-hinoto-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div class="how-header">
+                    <span class="text-hinoto-accent font-jp text-lg mb-4 block">使い方</span>
+                    <span class="text-hinoto-accent font-medium text-sm tracking-[0.3em] uppercase mb-4 block">Tecnología simple</span>
+                    <h2 class="font-sans text-4xl md:text-5xl font-light text-hinoto-black mb-8 leading-tight">
+                        Así de fácil<br><span class="font-medium">cambia tu experiencia</span>
+                    </h2>
+                    <p class="text-gray-500 text-lg leading-relaxed mb-10">
+                        Diseñado para ser intuitivo. Sin complicaciones, sin curva de aprendizaje. Solo presiona y disfruta.
+                    </p>
+                    
+                    <a href="#contacto" class="inline-flex items-center border-2 border-hinoto-black text-hinoto-black px-8 py-4 rounded-full font-semibold hover:bg-hinoto-black hover:text-white transition-all duration-300">
+                        Agendar demostración
+                    </a>
+                </div>
+                
+                <div class="space-y-6">
+                    <!-- Paso 1 -->
+                    <div class="how-step flex items-start p-6 rounded-2xl hover:bg-hinoto-gray transition-colors group">
+                        <div class="w-16 h-16 bg-hinoto-black text-white rounded-2xl flex items-center justify-center text-2xl font-light mr-6 flex-shrink-0 group-hover:bg-hinoto-accent transition-colors">01</div>
+                        <div>
+                            <h3 class="font-sans text-xl font-medium text-hinoto-black mb-2">Limpieza con agua</h3>
+                            <p class="text-gray-500 leading-relaxed">Boquilla extensible con agua purificada a temperatura ajustable. Presión personalizable para máximo confort.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Paso 2 -->
+                    <div class="how-step flex items-start p-6 rounded-2xl hover:bg-hinoto-gray transition-colors group">
+                        <div class="w-16 h-16 bg-hinoto-black text-white rounded-2xl flex items-center justify-center text-2xl font-light mr-6 flex-shrink-0 group-hover:bg-hinoto-accent transition-colors">02</div>
+                        <div>
+                            <h3 class="font-sans text-xl font-medium text-hinoto-black mb-2">Secado con aire templado</h3>
+                            <p class="text-gray-500 leading-relaxed">Aire cálido ajustable que completa la higiene sin necesidad de papel. Secado suave y eficiente.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Paso 3 -->
+                    <div class="how-step flex items-start p-6 rounded-2xl hover:bg-hinoto-gray transition-colors group">
+                        <div class="w-16 h-16 bg-hinoto-black text-white rounded-2xl flex items-center justify-center text-2xl font-light mr-6 flex-shrink-0 group-hover:bg-hinoto-accent transition-colors">03</div>
+                        <div>
+                            <h3 class="font-sans text-xl font-medium text-hinoto-black mb-2">Control total</h3>
+                            <p class="text-gray-500 leading-relaxed">Panel lateral intuitivo o control remoto. Memoriza preferencias de hasta 2 usuarios.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Paso 4 -->
+                    <div class="how-step flex items-start p-6 rounded-2xl hover:bg-hinoto-gray transition-colors group">
+                        <div class="w-16 h-16 bg-hinoto-black text-white rounded-2xl flex items-center justify-center text-2xl font-light mr-6 flex-shrink-0 group-hover:bg-hinoto-accent transition-colors">04</div>
+                        <div>
+                            <h3 class="font-sans text-xl font-medium text-hinoto-black mb-2">Autolimpieza inteligente</h3>
+                            <p class="text-gray-500 leading-relaxed">La boquilla se autolimpia antes y después de cada uso. Descarga automática al levantarse.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Modelos -->
+    <section id="modelos" class="py-32 bg-hinoto-black">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gallery-header">
+                <div>
+                    <span class="text-hinoto-accent font-jp text-lg mb-4 block">モデル</span>
+                    <span class="text-hinoto-accent font-medium text-sm tracking-[0.3em] uppercase mb-4 block">Colección</span>
+                    <h2 class="font-sans text-4xl md:text-6xl font-light text-white">
+                        Diseño que <span class="font-medium">inspira</span>
+                    </h2>
+                </div>
+                <p class="text-gray-400 mt-6 md:mt-0 max-w-md">
+                    Cada modelo combina la precisión japonesa con estéticas adaptadas a diferentes espacios.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Modelo 1 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-3xl mb-6">
+                        <div class="aspect-[4/5]">
+                            <img src="https://static.photos/minimal/640x360/201" alt="Inodoro inteligente modelo Zen" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-hinoto-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-6 left-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <a href="#contacto" class="w-full bg-white text-hinoto-black py-3 rounded-full font-semibold text-center block hover:bg-hinoto-accent hover:text-white transition-colors">
+                                Solicitar información
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3 class="font-sans text-xl font-medium text-white mb-1">Zen</h3>
+                            <p class="text-gray-400 text-sm">Minimalismo puro</p>
+                        </div>
+                        <span class="text-hinoto-accent font-jp">禅</span>
+                    </div>
+                </div>
+                
+                <!-- Modelo 2 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-3xl mb-6">
+                        <div class="aspect-[4/5]">
+                            <img src="https://static.photos/technology/640x360/88" alt="Inodoro inteligente modelo Kira" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-hinoto-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-6 left-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <a href="#contacto" class="w-full bg-white text-hinoto-black py-3 rounded-full font-semibold text-center block hover:bg-hinoto-accent hover:text-white transition-colors">
+                                Solicitar información
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3 class="font-sans text-xl font-medium text-white mb-1">Kira</h3>
+                            <p class="text-gray-400 text-sm">Tecnología avanzada</p>
+                        </div>
+                        <span class="text-hinoto-accent font-jp">輝</span>
+                    </div>
+                </div>
+                
+                <!-- Modelo 3 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-3xl mb-6">
+                        <div class="aspect-[4/5]">
+                            <img src="https://static.photos/workspace/640x360/155" alt="Inodoro inteligente modelo Muji" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-hinoto-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-6 left-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <a href="#contacto" class="w-full bg-white text-hinoto-black py-3 rounded-full font-semibold text-center block hover:bg-hinoto-accent hover:text-white transition-colors">
+                                Solicitar información
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3 class="font-sans text-xl font-medium text-white mb-1">Muji</h3>
+                            <p class="text-gray-400 text-sm">Elegancia atemporal</p>
+                        </div>
+                        <span class="text-hinoto-accent font-jp">無地</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="py-32 bg-hinoto-gray">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20 testimonial-header">
+                <span class="text-hinoto-accent font-jp text-lg mb-4 block">お客様の声</span>
+                <span class="text-hinoto-accent font-medium text-sm tracking-[0.3em] uppercase mb-4 block">Experiencias reales</span>
+                <h2 class="font-sans text-4xl md:text-6xl font-light text-hinoto-black mb-6">
+                    Lo que dicen <span class="font-medium">nuestros clientes</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonio 1 -->
+                <div class="testimonial-card bg-white p-10 rounded-3xl">
+                    <div class="flex items-center mb-8">
+                        <img src="https://static.photos/people/200x200/33" alt="María González" class="w-16 h-16 rounded-full object-cover">
+                        <div class="ml-5">
+                            <h4 class="font-sans font-semibold text-hinoto-black text-lg">María González</h4>
+                            <p class="text-gray-400 text-sm">Residencial Polanco, CDMX</p>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <i data-lucide="quote" class="w-10 h-10 text-hinoto-accent/20"></i>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        "Nunca imaginé que un inodoro pudiera cambiar tanto la experiencia del baño. La higiene, el confort... todo es otro nivel. Mis invitados siempre preguntan dónde lo compré."
+                    </p>
+                    <div class="mt-8 flex text-hinoto-accent">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 2 -->
+                <div class="testimonial-card bg-white p-10 rounded-3xl">
+                    <div class="flex items-center mb-8">
+                        <img src="https://static.photos/people/200x200/45" alt="Roberto Sánchez" class="w-16 h-16 rounded-full object-cover">
+                        <div class="ml-5">
+                            <h4 class="font-sans font-semibold text-hinoto-black text-lg">Roberto Sánchez</h4>
+                            <p class="text-gray-400 text-sm">Desarrollador Inmobiliario</p>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <i data-lucide="quote" class="w-10 h-10 text-hinoto-accent/20"></i>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        "Instalé 12 unidades en mi desarrollo de departamentos de lujo. Los compradores los mencionan como un diferenciador clave. La instalación de Hinoto fue impecable."
+                    </p>
+                    <div class="mt-8 flex text-hinoto-accent">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 3 -->
+                <div class="testimonial-card bg-white p-10 rounded-3xl">
+                    <div class="flex items-center mb-8">
+                        <img src="https://static.photos/people/200x200/67" alt="Laura Jiménez" class="w-16 h-16 rounded-full object-cover">
+                        <div class="ml-5">
+                            <h4 class="font-sans font-semibold text-hinoto-black text-lg">Laura Jiménez</h4>
+                            <p class="text-gray-400 text-sm">Casa en Las Lomas</p>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <i data-lucide="quote" class="w-10 h-10 text-hinoto-accent/20"></i>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        "Al principio dudaba por la tecnología, pero es increíblemente intuitivo. El asiento térmico en invierno es un lujo que no sabía que necesitaba. Totalmente recomendado."
+                    </p>
+                    <div class="mt-8 flex text-hinoto-accent">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgencia / Escasez -->
+    <section id="urgencia" class="py-20 bg-hinoto-accent">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center urgency-section">
+            <div class="flex justify-center mb-6">
+                <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
+                    <i data-lucide="clock" class="w-10 h-10 text-white"></i>
+                </div>
+            </div>
+            
+            <h2 class="font-sans text-3xl md:text-5xl font-light text-white mb-6">
+                Disponibilidad <span class="font-medium">limitada</span> por modelo
+            </h2>
+            
+            <p class="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+                Importación directa desde Japón. Instalaciones programadas por agenda para garantizar servicio de excelencia.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-5 justify-center items-center mb-8">
+                <a href="#contacto" class="bg-hinoto-black text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-white hover:text-hinoto-black transition-all duration-300 shadow-2xl">
+                    Reservar Asesoría
+                </a>
+                <div class="flex items-center text-white font-medium bg-white/20 px-6 py-3 rounded-full">
+                    <span class="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></span>
+                    Solo 5 unidades Zen disponibles
+                </div>
+            </div>
+            
+            <p class="text-white/70 text-sm">
+                *Asesoría personalizada sin costo. Garantía de 5 años incluida.
+            </p>
+        </div>
+    </section>
+
+    <!-- Formulario -->
+    <section id="contacto" class="py-32 bg-hinoto-white">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 form-header">
+                <span class="text-hinoto-accent font-jp text-lg mb-4 block">お問い合わせ</span>
+                <span class="text-hinoto-accent font-medium text-sm tracking-[0.3em] uppercase mb-4 block">Comienza tu transformación</span>
+                <h2 class="font-sans text-4xl md:text-5xl font-light text-hinoto-black mb-6">
+                    Solicita información de tu<br><span class="font-medium">inodoro inteligente</span>
+                </h2>
+                <p class="text-gray-500 text-lg">
+                    Nuestro especialista te contactará en menos de 24 horas con una propuesta personalizada.
+                </p>
+            </div>
+            
+            <form id="lead-form" class="space-y-6 bg-hinoto-gray p-10 md:p-14 rounded-3xl form-container">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-hinoto-black mb-3">Nombre completo *</label>
+                        <input type="text" name="nombre" required class="w-full px-5 py-4 rounded-xl border-0 bg-white focus:ring-2 focus:ring-hinoto-accent outline-none transition-all" placeholder="Tu nombre">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-hinoto-black mb-3">WhatsApp *</label>
+                        <input type="tel" name="whatsapp" required class="w-full px-5 py-4 rounded-xl border-0 bg-white focus:ring-2 focus:ring-hinoto-accent outline-none transition-all" placeholder="+52 55 1234 5678">
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-semibold text-hinoto-black mb-3">Correo electrónico *</label>
+                    <input type="email" name="email" required class="w-full px-5 py-4 rounded-xl border-0 bg-white focus:ring-2 focus:ring-hinoto-accent outline-none transition-all" placeholder="tu@email.com">
+                    </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-hinoto-black mb-3">Tipo de proyecto *</label>
+                        <select name="tipo" required class="w-full px-5 py-4 rounded-xl border-0 bg-white focus:ring-2 focus:ring-hinoto-accent outline-none transition-all appearance-none cursor-pointer">
+                            <option value="">Selecciona una opción</option>
+                            <option value="residencial">Residencial (Casa/Departamento)</option>
+                            <option value="comercial">Comercial (Hotel/Oficina/Spa)</option>
+                            <option value="desarrollo">Desarrollo inmobiliario</option>
+                            <option value="arquitecto">Soy arquitecto/interiorista</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-hinoto-black mb-3">Ciudad *</label>
+                        <input type="text" name="ciudad" required class="w-full px-5 py-4 rounded-xl border-0 bg-white focus:ring-2 focus:ring-hinoto-accent outline-none transition-all" placeholder="Ej: Ciudad de México">
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-semibold text-hinoto-black mb-3">Mensaje adicional (opcional)</label>
+                    <textarea name="mensaje" rows="4" class="w-full px-5 py-4 rounded-xl border-0 bg-white focus:ring-2 focus:ring-hinoto-accent outline-none transition-all resize-none" placeholder="¿Tienes alguna preferencia de modelo o necesidad específica?"></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-hinoto-black text-white py-5 rounded-xl font-bold text-lg hover:bg-hinoto-accent transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl flex items-center justify-center group">
+                    Quiero mi cotización
+                    <i data-lucide="arrow-right" class="w-5 h-5 ml-3 transform group-hover:translate-x-1 transition-transform"></i>
+                </button>
+                
+                <div class="flex items-center justify-center text-gray-400 text-sm space-x-6">
+                    <span class="flex items-center">
+                        <i data-lucide="shield-check" class="w-4 h-4 mr-2"></i>
+                        Datos protegidos
+                    </span>
+                    <span class="flex items-center">
+                        <i data-lucide="clock" class="w-4 h-4 mr-2"></i>
+                        Respuesta en 24h
+                    </span>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-hinoto-black text-white py-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <span class="font-jp text-3xl font-light text-hinoto-accent">日の出</span>
+                        <span class="font-sans text-2xl font-semibold tracking-wider">HINOTO</span>
+                    </div>
+                    <p class="text-gray-400 max-w-md leading-relaxed mb-8">
+                        Distribuidores exclusivos de inodoros inteligentes japoneses premium en México. Tecnología, diseño y bienestar para tu hogar.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center hover:bg-hinoto-accent transition-colors">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center hover:bg-hinoto-accent transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center hover:bg-hinoto-accent transition-colors">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Contacto</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-center">
+                            <i data-lucide="map-pin" class="w-4 h-4 mr-3 text-hinoto-accent"></i>
+                            Ciudad de México
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="phone" class="w-4 h-4 mr-3 text-hinoto-accent"></i>
+                            +52 55 1234 5678
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="mail" class="w-4 h-4 mr-3 text-hinoto-accent"></i>
+                            hola@banoshinoto.com
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Productos</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li>Modelo Zen</li>
+                        <li>Modelo Kira</li>
+                        <li>Modelo Muji</li>
+                        <li>Accesorios</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">
+                    © 2024 Baños Hinoto. Todos los derechos reservados.
+                </p>
+                <div class="flex space-x-8 mt-6 md:mt-0 text-sm text-gray-500">
+                    <a href="#" class="hover:text-white transition-colors">Aviso de Privacidad</a>
+                    <a href="#" class="hover:text-white transition-colors">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5215512345678?text=Hola,%20estoy%20interesado%20en%20los%20inodoros%20inteligentes%20de%20Baños%20Hinoto" 
+       target="_blank" 
+       id="whatsapp-btn"
+       class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center hover:bg-green-600 transition-all duration-300 z-50 hover:scale-110 group">
+        <i data-lucide="message-circle" class="w-8 h-8 fill-current"></i>
+        <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-bold animate-pulse">1</span>
+        
+        <!-- Tooltip -->
+        <span class="absolute right-full mr-4 bg-hinoto-black text-white text-sm px-4 py-2 rounded-full whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+            ¿Tienes dudas? Escríbenos
+        </span>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
