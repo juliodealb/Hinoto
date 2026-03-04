@@ -149,7 +149,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Simulate API call - REEMPLAZAR CON TU ENDPOINT REAL
             try {
                 // Ejemplo: await fetch('https://tu-api.com/leads', { method: 'POST', body: formData });
-                await simulateFormSubmission(data);
+                await fetch(leadForm.action, {
+  method: "POST",
+  body: formData,
+  headers: {
+    "Accept": "application/json"
+  }
+});
                 
                 // Success
                 showFormSuccess(leadForm);
