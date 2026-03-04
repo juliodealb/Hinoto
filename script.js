@@ -149,14 +149,18 @@ document.addEventListener('DOMContentLoaded', function() {
             // Simulate API call - REEMPLAZAR CON TU ENDPOINT REAL
             try {
                 // Ejemplo: await fetch('https://tu-api.com/leads', { method: 'POST', body: formData });
-                await fetch(leadForm.action, {
+                const res = await fetch(leadForm.action, {
   method: "POST",
   body: formData,
   headers: {
     "Accept": "application/json"
   }
 });
-                
+
+if (!res.ok) {
+  const text = await res.text();
+  throw new Error(`Formspree error ${res.status}: ${text}`);
+}              
                 // Success
                 showFormSuccess(leadForm);
                 
