@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3 class="font-sans text-2xl font-semibold text-hinoto-black mb-4">¡Gracias por tu interés!</h3>
                 <p class="text-gray-600 mb-6">Hemos recibido tu solicitud. Un especialista de Baños Hinoto te contactará en <strong>menos de 24 horas</strong> con tu propuesta personalizada.</p>
                 <p class="text-sm text-gray-400 mb-8">Mientras tanto, ¿tienes preguntas? Escríbenos por WhatsApp:</p>
-                <a href="https://wa.me/5215512345678?text=Hola,%20acabo%20de%20enviar%20mi%20solicitud%20de%20cotización" 
+                <a href="https://wa.me/5213314793497?text=Hola,%20acabo%20de%20enviar%20mi%20solicitud%20de%20cotización" 
                    target="_blank"
                    class="inline-flex items-center bg-green-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-600 transition-colors">
                     <i data-lucide="message-circle" class="w-5 h-5 mr-3"></i>
